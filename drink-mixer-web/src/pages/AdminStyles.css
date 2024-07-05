@@ -1,0 +1,95 @@
+.admin-login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/images/davidnig.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.admin h1 {
+    text-align: center;
+
+    /* remove conflicting styles */
+    background: none; 
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.admin-login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-inputs {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 6rem;
+}
+
+.form-inputs input {
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 2px solid rgb(196, 196, 196);
+    padding-bottom: .5rem;
+}
+
+.form-inputs input::placeholder {
+    color: rgb(196, 196, 196);
+    opacity: 1;
+}
+
+.form-inputs input:focus,
+.form-inputs input:not(:placeholder-shown) {
+    border-bottom: 2px solid white;
+}
+
+.admin-button {
+    width: fit-content;
+    margin-top: 300px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: 2px solid rgb(196, 196, 196);
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.admin-button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    border: 2px solid white;
+}
+
+.admin-wrapper {
+    background-color: rgb(34, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.selected-drinks-container {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.admin-wrapper button {
+    margin-top: 30px;
+
+}
+
+.admin-button-container {
+    display: flex;
+    gap: 5rem;
+}
