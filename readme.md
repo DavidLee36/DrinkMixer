@@ -35,6 +35,7 @@ The Raspberry Pi acts as a middleman between users and the Arduino. It:
 - Basic knowledge of setting up a Vite/React site.
 
 ### Steps
+**Make sure to adjust wifi info and IP addresses to match your hardware**
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/yourusername/DrinkMixer.git
@@ -59,7 +60,7 @@ The Raspberry Pi acts as a middleman between users and the Arduino. It:
     - Upload the Arduino code found in the `Arduino` folder to your Arduino Uno R4 WiFi.
 
 ### Usage
-Navigate to `sleepyjoesaloon.com` and create any drink combination. Click the "Make Drink" button to send the order.
+Navigate to [SleepyJoeSaloon.com](sleepyjoesaloon.com) and create any drink combination. Click the "Make Drink" button to send the order.
 
 ## License
 This project is released under a "please credit me if you use it" license.
