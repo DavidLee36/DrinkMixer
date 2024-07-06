@@ -13,8 +13,8 @@ byte frame[numRows][numColumns];
 const int errorLED = A0;
 
 // Wifi variables
-const char* ssid = "SpectrumSetup-75";
-const char* password = "dutymirror389";
+const char* ssid = "WIFI SSID";
+const char* password = "WIFI PASSWORD";
 WiFiServer server(80);
 
 // Used for receiving data from web server
