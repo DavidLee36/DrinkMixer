@@ -3,97 +3,97 @@
         {
             "id": -1,
             "name": "No Drink",
-            "picture": "src/assets/images/NoDrink.png"
+            "picture": "assets/images/NoDrink.png"
         },
         {
             "id": 0,
             "name": "Mtn Dew",
-            "picture": "src/assets/images/MtnDew.png"
+            "picture": "assets/images/MtnDew.png"
         },
         {
             "id": 1,
             "name": "White Claw",
-            "picture": "src/assets/images/WhiteClaw.png"
+            "picture": "assets/images/WhiteClaw.png"
         },
         {
             "id": 2,
             "name": "Boxed Wine",
-            "picture": "src/assets/images/BoxWine.png"
+            "picture": "assets/images/BoxWine.png"
         },
         {
             "id": 3,
             "name": "Pink Whitney",
-            "picture": "src/assets/images/PinkWhitney.png"
+            "picture": "assets/images/PinkWhitney.png"
         },
         {
             "id": 4,
             "name": "Dr. Pepper",
-            "picture": "src/assets/images/DrPepper.png"
+            "picture": "assets/images/DrPepper.png"
         },
         {
             "id": 5,
             "name": "Seagrams",
-            "picture": "src/assets/images/Seagrams.png"
+            "picture": "assets/images/Seagrams.png"
         },
         {
             "id": 6,
             "name": "The Capn",
-            "picture": "src/assets/images/Capn.png"
+            "picture": "assets/images/Capn.png"
         },
         {
             "id": 7,
             "name": "Pepsi",
-            "picture": "src/assets/images/Pepsi.png"
+            "picture": "assets/images/Pepsi.png"
         },
         {
             "id": 8,
             "name": "Jose Cuervo",
-            "picture": "src/assets/images/Jose.png"
+            "picture": "assets/images/Jose.png"
         },
         {
             "id": 9,
             "name": "Orange Juice",
-            "picture": "src/assets/images/OrangeJuice.png"
+            "picture": "assets/images/OrangeJuice.png"
         },
         {
             "id": 10,
             "name": "Corona",
-            "picture": "src/assets/images/Corona.png"
+            "picture": "assets/images/Corona.png"
         },
         {
             "id": 11,
             "name": "Smirnoff Vodka",
-            "picture": "src/assets/images/Smirnoff.png"
+            "picture": "assets/images/Smirnoff.png"
         },
         {
             "id": 12,
             "name": "Ginger Ale",
-            "picture": "src/assets/images/Schweppes.png"
+            "picture": "assets/images/Schweppes.png"
         },
         {
             "id": 13,
             "name": "Lime Juice",
-            "picture": "src/assets/images/LimeJuice.png"
+            "picture": "assets/images/LimeJuice.png"
         },
         {
             "id": 14,
             "name": "Coca Cola",
-            "picture": "src/assets/images/Coke.png"
+            "picture": "assets/images/Coke.png"
         },
         {
             "id": 15,
             "name": "Jim Bean",
-            "picture": "src/assets/images/JimBean.png"
+            "picture": "assets/images/JimBean.png"
         },
         {
             "id": 16,
             "name": "Cranberry Juice",
-            "picture": "src/assets/images/CranberryJuice.png"
+            "picture": "assets/images/CranberryJuice.png"
         },
         {
             "id": 17,
             "name": "Water",
-            "picture": "src/assets/images/Water.png"
+            "picture": "assets/images/Water.png"
         }
     ],
     "recipes": [
@@ -194,84 +194,84 @@
         {
             "id": 16,
             "name": "Cranberry Juice",
-            "picture": "src/assets/images/CranberryJuice.png"
+            "picture": "assets/images/CranberryJuice.png"
         },
         {
             "id": 15,
             "name": "Jim Bean",
-            "picture": "src/assets/images/JimBean.png"
+            "picture": "assets/images/JimBean.png"
         },
         {
             "id": 14,
             "name": "Coca Cola",
-            "picture": "src/assets/images/Coke.png"
+            "picture": "assets/images/Coke.png"
         },
         {
             "id": 11,
             "name": "Smirnoff Vodka",
-            "picture": "src/assets/images/Smirnoff.png"
+            "picture": "assets/images/Smirnoff.png"
         },
         {
             "id": 6,
             "name": "The Capn",
-            "picture": "src/assets/images/Capn.png"
+            "picture": "assets/images/Capn.png"
         },
         {
             "id": 9,
             "name": "Orange Juice",
-            "picture": "src/assets/images/OrangeJuice.png"
+            "picture": "assets/images/OrangeJuice.png"
         },
         {
             "id": 12,
             "name": "Ginger Ale",
-            "picture": "src/assets/images/Schweppes.png"
+            "picture": "assets/images/Schweppes.png"
         },
         {
             "id": 13,
             "name": "Lime Juice",
-            "picture": "src/assets/images/LimeJuice.png"
+            "picture": "assets/images/LimeJuice.png"
         }
     ],
     "defaultDrinks": [
         {
             "id": 0,
             "name": "Mtn Dew",
-            "picture": "src/assets/images/MtnDew.png"
+            "picture": "assets/images/MtnDew.png"
         },
         {
             "id": 1,
             "name": "White Claw",
-            "picture": "src/assets/images/WhiteClaw.png"
+            "picture": "assets/images/WhiteClaw.png"
         },
         {
             "id": 2,
             "name": "Boxed Wine",
-            "picture": "src/assets/images/BoxWine.png"
+            "picture": "assets/images/BoxWine.png"
         },
         {
             "id": 3,
             "name": "Pink Whitney",
-            "picture": "src/assets/images/PinkWhitney.png"
+            "picture": "assets/images/PinkWhitney.png"
         },
         {
             "id": 4,
             "name": "Dr. Pepper",
-            "picture": "src/assets/images/DrPepper.png"
+            "picture": "assets/images/DrPepper.png"
         },
         {
             "id": -1,
             "name": "No Drink",
-            "picture": "src/assets/images/NoDrink.png"
+            "picture": "assets/images/NoDrink.png"
         },
         {
             "id": -1,
             "name": "No Drink",
-            "picture": "src/assets/images/NoDrink.png"
+            "picture": "assets/images/NoDrink.png"
         },
         {
             "id": -1,
             "name": "No Drink",
-            "picture": "src/assets/images/NoDrink.png"
+            "picture": "assets/images/NoDrink.png"
         }
     ]
 }
