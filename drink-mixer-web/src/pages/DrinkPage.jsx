@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import DrinkComponent from './DrinkComponent';
-import RecipeComponent from './RecipeComponent';
 import './DrinksStyles.css';
 import { retrieveDrinks, sendDrinkOrder } from '../assets/communication';
 
