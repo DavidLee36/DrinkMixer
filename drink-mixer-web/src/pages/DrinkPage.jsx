@@ -13,7 +13,6 @@ const DrinkPage = () => {
     const maxVolume = 60;
 
     useEffect(() => {
-        console.log('go fuck yourself')
         const setDrinkData = async () => {
             const drinks = await retrieveDrinks();
             setCurrentDrinks(drinks.currDrinks);

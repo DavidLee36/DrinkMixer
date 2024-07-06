@@ -29,6 +29,14 @@ export const communicateWithArduino = async (drinkOrder) => {
     }
 }
 
+const getAPIURL = () => {
+    if(process.env.NODE_ENV === 'development') {
+        return LOCALURL;
+    }else {
+        return serverURL;
+    }
+}
+
 export const sendDrinkOrder = async (drinkOrder) => {
     const controller = new AbortController();
     const timeout = setTimeout(() => {
@@ -36,8 +44,8 @@ export const sendDrinkOrder = async (drinkOrder) => {
     }, 5000); // Set timeout to 5 seconds
 
     try {
-        const ip = await getIP();
-        const response = await fetch(`${serverURL}/api/drinks/send-order`, {
+        const apiURL = getAPIURL();
+        const response = await fetch(`${apiURL}/api/drinks/send-order`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -64,19 +72,6 @@ export const sendDrinkOrder = async (drinkOrder) => {
     }
 }
 
-export const getIP = async () => {
-    let localMachine = false;
-    try {
-        const response = await fetch('https://ipinfo.io/ip');
-        const clientPublicIP = (await response.text()).trim();
-        if (clientPublicIP === PUBLICURL) localMachine = true;
-        return localMachine ? LOCALURL : PUBLICURL;
-    } catch (error) {
-        console.error('error receiving public IP: ', error);
-        return PUBLICURL; //If error occured assume we are on non local network
-    }
-}
-
 //Retrieve the 8 current drinks from the Raspberry Pi server,
 //If any issues return default drink selection
 export const retrieveDrinks = async () => {
@@ -87,8 +82,8 @@ export const retrieveDrinks = async () => {
         controller.abort();
     }, 5000); // Set timeout to 5 seconds
     try {
-        const ip = await getIP();
-        const response = await fetch(`${serverURL}/api/drinks/data`, {
+        const apiURL = getAPIURL();
+        const response = await fetch(`${apiURL}/api/drinks/data`, {
             signal: controller.signal
         });
         clearTimeout(timeout);
@@ -106,8 +101,8 @@ export const retrieveDrinks = async () => {
 export const updateDrinkJSON = async (updatedFile) => {
     let alertMsg = '';
     try {
-        const ip = await getIP();
-        const response = await fetch(`${serverURL}/api/drinks/update`, {
+        const apiURL = getAPIURL();
+        const response = await fetch(`${apiURL}/api/drinks/update`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -131,8 +126,8 @@ export const updateDrinkJSON = async (updatedFile) => {
 
 export const retreiveQueue = async () => {
     try {
-        const ip = await getIP();
-        const response = await fetch(`${serverURL}/api/drinks/getQueue`);
+        const apiURL = getAPIURL();
+        const response = await fetch(`${apiURL}/api/drinks/getQueue`);
         const queue = await response.json();
         return queue
     } catch (error) {
