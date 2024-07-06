@@ -1,4 +1,5 @@
 const URL = 'http://192.168.1.57/drinkOrder';
+const serverURL = 'https://api.sleepyjoesaloon.com/'
 const PUBLICURL = import.meta.env.VITE_PUBLIC_IP;
 const LOCALURL = import.meta.env.VITE_LOCAL_IP;
 
@@ -36,7 +37,7 @@ export const sendDrinkOrder = async (drinkOrder) => {
 
     try {
         const ip = await getIP();
-        const response = await fetch(`http://${ip}/api/drinks/send-order`, {
+        const response = await fetch(`${serverURL}/api/drinks/send-order`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -87,7 +88,7 @@ export const retrieveDrinks = async () => {
     }, 5000); // Set timeout to 5 seconds
     try {
         const ip = await getIP();
-        const response = await fetch(`http://${ip}/api/drinks/data`, {
+        const response = await fetch(`${serverURL}/api/drinks/data`, {
             signal: controller.signal
         });
         clearTimeout(timeout);
@@ -106,7 +107,7 @@ export const updateDrinkJSON = async (updatedFile) => {
     let alertMsg = '';
     try {
         const ip = await getIP();
-        const response = await fetch(`http://${ip}/api/drinks/update`, {
+        const response = await fetch(`${serverURL}/api/drinks/update`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -131,7 +132,7 @@ export const updateDrinkJSON = async (updatedFile) => {
 export const retreiveQueue = async () => {
     try {
         const ip = await getIP();
-        const response = await fetch(`http://${ip}/api/drinks/getQueue`);
+        const response = await fetch(`${serverURL}/api/drinks/getQueue`);
         const queue = await response.json();
         return queue
     } catch (error) {
