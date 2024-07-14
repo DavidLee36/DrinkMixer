@@ -9,7 +9,7 @@ const DrinkPage = () => {
     const [order, setOrder] = useState([0, 0, 0, 0, 0, 0, 0, 0]);
     const [recipes, setRecipes] = useState([]);
     const [currentDrinks, setCurrentDrinks] = useState([]);
-    const maxVolume = 60;
+    const maxVolume = 14;
 
     useEffect(() => {
         const setDrinkData = async () => {
