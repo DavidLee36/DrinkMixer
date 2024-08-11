@@ -1,5 +1,5 @@
 const URL = 'http://192.168.1.57/drinkOrder';
-const serverURL = 'https://api.sleepyjoesaloon.com'
+const serverURL = 'https://api.sleepyjoesaloon.com';
 const PUBLICURL = import.meta.env.VITE_PUBLIC_IP;
 const LOCALURL = import.meta.env.VITE_LOCAL_IP;
 
@@ -31,6 +31,7 @@ export const communicateWithArduino = async (drinkOrder) => {
 
 const getAPIURL = () => {
     if(process.env.NODE_ENV === 'development') {
+        console.log('in development mode');
         return LOCALURL;
     }else {
         return serverURL;

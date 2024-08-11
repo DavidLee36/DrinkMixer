@@ -94,6 +94,11 @@
             "id": 17,
             "name": "Water",
             "picture": "assets/images/Water.png"
+        },
+        {
+            "id": 18,
+            "name": "Margarita Mix",
+            "picture": "assets/images/Margarita.png"
         }
     ],
     "recipes": [
