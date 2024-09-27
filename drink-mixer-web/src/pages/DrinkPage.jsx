@@ -65,7 +65,7 @@ const DrinkPage = () => {
 
     return (
         <div className='page-wrapper'>
-            <h1>Sleepy Joe's Saloon</h1>
+            <h1>David's Automatic Bartender</h1>
             <h3>Click on a drink to choose the amount to pour, or choose from a pre made recipe!</h3>
             {currentDrinks.length === 0 &&
                 <div className="loader-container">
