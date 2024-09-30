@@ -6,11 +6,11 @@ const SecretListener = () => {
     const navigate = useNavigate();
 
     const keyMap = {
-        p: false,
-        e: false,
-        n: false,
+        d: false,
+        r: false,
         i: false,
-        s: false,
+        n: false,
+        k: false,
     };
 
     useEffect(() => {
